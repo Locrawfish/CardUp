@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang ='en'>
+  <head>
+    <% include ../partials/head %>
+  </head>
+
+  <body class = 'container-fluid'>
+    <header>
+     <% include ../partials/header %>
+    </header>
+
+    <main>
+      <div>
+        <h1>Cards:</h1>
+
+        <% cards.forEach(function(card){ %>
+        <h4>
+          <form method="POST" action="/cards/<%= card._id %>?_method=DELETE">
+            <a href="/cards/<%= card._id %>"><%= card.title %></a>
+
+            <button type="submit" class="btn btn-xs btn-danger">Delete</button>
+          </form>
+        </h4>
+        <% })%>
+      </div>
+      <a href="/cards/new" class = 'btn btn-primary'>New</a>
+    </main>
+
+
+      <footer>
+      <% include ../partials/footer %>
+    </footer>
+  </body>
+</html>
