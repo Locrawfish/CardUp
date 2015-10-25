@@ -3,9 +3,23 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+     <head>
+       <% include partials/head %>
+     </head>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <header>
+     <% include partials/header %>
+    </header>
+
+    <main>
+      <div class="jumbotron">
+        <h1>Welcome to <%= title %></h1>
+      </div>
+    </main>
+
+    <footer>
+      <% include partials/footer %>
+    </footer>
   </body>
 </html>
