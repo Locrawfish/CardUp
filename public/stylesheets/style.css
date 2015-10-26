@@ -46,7 +46,7 @@ a {
 
 .sidebar-wrapper li a:hover{
   text-decoration: none;
-  color: yellow;
+  color: #0099CC;
   -webkit-animation-name: slidein; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
     animation-name: slidein;
