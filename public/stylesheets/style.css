@@ -35,8 +35,8 @@ body {
 
 .sidebar-wrapper li{
   list-style: none;
-  font-size: 1.5em;
-  padding-top: 20px;
+  font-size: 1.8em;
+  padding-top: 25px;
   color:#70DBDB;
 }
 
@@ -55,13 +55,13 @@ body {
 }
 @keyframes slidein {
    0% { margin-left:  0; }
-  50% { margin-left:  10px; }
-  /*75% { margin-left:  10px; }*/
-  100% { margin-left:  0px; }
+  /*50% { margin-left:  3px; }
+  75% { margin-left:  6px; }*/
+  100% { margin-left:  10px; }
 }
 
 .sidebar-wrapper li a:active{
-  color:yellow;
+  color:#70DBDB;
   list-style: none;
   margin-left: 75px;
 }
