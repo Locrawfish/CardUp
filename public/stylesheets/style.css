@@ -27,6 +27,7 @@ body {
 #sidebar-brand {
   font-size: 4em;
 }
+
 .sidebar-wrapper{
   padding-left: 10px;
   margin-left: 0;
@@ -35,6 +36,8 @@ body {
 
 .sidebar-wrapper li{
   list-style: none;
+  font-size: 1.5em;
+  padding-top: 20px;
   font-size: 1.8em;
   padding-top: 25px;
   color:#70DBDB;
@@ -46,6 +49,7 @@ body {
 
 .sidebar-wrapper li a:hover{
   text-decoration: none;
+  color: #0099CC;
   color: #70DBDB;
   -webkit-animation-name: slidein; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
@@ -55,6 +59,13 @@ body {
 }
 @keyframes slidein {
    0% { margin-left:  0; }
+  50% { margin-left:  5px; }
+  /*75% { margin-left:  10px; }*/
+  100% { margin-left:  0px; }
+}
+
+.sidebar-wrapper li a:active{
+  color:yellow;
   /*50% { margin-left:  3px; }
   75% { margin-left:  6px; }*/
   100% { margin-left:  10px; }
@@ -65,5 +76,3 @@ body {
   list-style: none;
   margin-left: 75px;
 }
-
-

@@ -13,6 +13,7 @@ var authenticate = function(req, res, next) {
 
 //INDEX
 router.get('/', authenticate, function(req, res, next) {
+  console.log('Cards:index');
   var cards = global.currentUser.cards;
   res.render('cards/index', { cards: cards, message: req.flash() })
 });
