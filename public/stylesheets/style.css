@@ -1,8 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Josefin Slab', serif;
 }
 
-a {
-  color: #00B7FF;
+.title h1{
+  text-align: center;
 }
+
+/*NAVIGATION*/
+#wrapper{
+  background-color:black;
+  padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  height: 100%;
+  z-index: 1000;
+  position: fixed;
+  margin-left: -50px;
+  margin-top: -50px;
+  overflow-y: auto;
+}
+
+#sidebar-brand {
+  font-size: 4em;
+}
+.sidebar-wrapper{
+  padding-left: 10px;
+  margin-left: 0;
+  height: 100%;
+}
+
+.sidebar-wrapper li{
+  list-style: none;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+
+.sidebar-wrapper li a{
+  color:white;
+}
+
+.sidebar-wrapper li a:hover{
+  text-decoration: none;
+  color: yellow;
+  -webkit-animation-name: slidein; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: slidein;
+    animation-duration: 1s;
+
+}
+@keyframes slidein {
+   0% { margin-left:  0; }
+  50% { margin-left:  5px; }
+  /*75% { margin-left:  10px; }*/
+  100% { margin-left:  0px; }
+}
+
+.sidebar-wrapper li a:active{
+  color:yellow;
+  list-style: none;
+  margin-left: 75px;
+}
+
+
