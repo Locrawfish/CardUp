@@ -1,12 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Josefin Slab', serif;
 }
 
-a {
-  color: #00B7FF;
+.title h1{
+  text-align: center;
 }
-
 
 /*NAVIGATION*/
 #wrapper{
@@ -38,6 +38,9 @@ a {
   list-style: none;
   font-size: 1.5em;
   padding-top: 20px;
+  font-size: 1.8em;
+  padding-top: 25px;
+  color:#70DBDB;
 }
 
 .sidebar-wrapper li a{
@@ -47,6 +50,7 @@ a {
 .sidebar-wrapper li a:hover{
   text-decoration: none;
   color: #0099CC;
+  color: #70DBDB;
   -webkit-animation-name: slidein; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
     animation-name: slidein;
@@ -62,9 +66,13 @@ a {
 
 .sidebar-wrapper li a:active{
   color:yellow;
+  /*50% { margin-left:  3px; }
+  75% { margin-left:  6px; }*/
+  100% { margin-left:  10px; }
+}
+
+.sidebar-wrapper li a:active{
+  color:#70DBDB;
   list-style: none;
   margin-left: 75px;
 }
-
-
-
