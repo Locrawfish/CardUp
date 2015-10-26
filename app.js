@@ -9,6 +9,7 @@ var mongoose = require('mongoose');
 //REQUIRED MODELS
 var Card = require('./models/card');
 
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var cards = require('./routes/cards');
