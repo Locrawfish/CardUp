@@ -37,6 +37,7 @@ body {
   list-style: none;
   font-size: 1.5em;
   padding-top: 20px;
+  color:#70DBDB;
 }
 
 .sidebar-wrapper li a{
@@ -45,7 +46,7 @@ body {
 
 .sidebar-wrapper li a:hover{
   text-decoration: none;
-  color: yellow;
+  color: #70DBDB;
   -webkit-animation-name: slidein; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
     animation-name: slidein;
@@ -54,7 +55,7 @@ body {
 }
 @keyframes slidein {
    0% { margin-left:  0; }
-  50% { margin-left:  5px; }
+  50% { margin-left:  10px; }
   /*75% { margin-left:  10px; }*/
   100% { margin-left:  0px; }
 }
